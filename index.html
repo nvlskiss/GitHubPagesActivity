@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" 
+        rel="stylesheet">
+  <title>About Us</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid gap-3">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="d-flex collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="#Games">Our Games</a></li>
+
+          <li class="nav-item bg-light text-dark">
+            <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              Countdowns
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#Countdowns">Monthsary</a></li>
+              <li><a class="dropdown-item" href="#Countdowns">Anniversary</a></li>
+              <li><a class="dropdown-item" href="#Countdowns">His Birthday</a></li>
+              <li><a class="dropdown-item" href="#Countdowns">My Birthday</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#Break">Break Up?</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="Home">
+    <div class="container-fluid d-flex homeContent">
+      <div class="container-fluid d-flex align-items-center justify-content-end">
+          <img src="milk-and-mocha-bear.gif">
+      </div>
+
+      <div class="container-fluid d-flex flex-column align-items-center justify-content-center page">
+        <h3>Hello, I'm</h3>
+        <h1>Nichole Velasquez</h1>
+        <p>My personal hobby is my boyfriend</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- Our Games -->
+    <section id="Games">
+        <div class="container-fluid d-flex flex-column align-items-center infoContainer page">
+          <div class="container-fluid align-items-center pt-4">
+            <h1 class="text-center">Our Games</h1>
+            <div class="container-fluid gap-3 d-flex justify-content-center page">
+              <div class="card" style="width: 18rem;">
+                <img src="bokura.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Bokura</h5>
+                  <p class="card-text">BOKURA is a two-player puzzle adventure game.</p>
+                  <a href="https://store.steampowered.com/app/1801110/BOKURA/" class="btn btn-primary">Available on Steam</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img src="sky.jpg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Sky: Children of the Light</h5>
+                  <p class="card-text">Sky: Children of the Light is a peaceful, award-winning MMO from the creators of Journey.</p>
+                  <a href="https://www.thatskygame.com/" class="btn btn-primary">Available on Mobile</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Countdowns -->
+    <section id="Countdowns">
+        <h3 class="text-center pt-5">Countdowns</h3>
+        <br>
+        <div class="container-fluid gap-3 d-flex justify-content-center page">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Current Time</h5>
+                  <p id="clock"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Time Until Monthsary</h5>
+                  <p id="month"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Time Until Anniversary</h5>
+                  <p id="anniv"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Time Until His Birthday</h5>
+                  <p id="heB"></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Time Until My Birthday</h5>
+                  <p id="sheB"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Break">
+      <div class="container-fluid d-flex flex-column align-items-center justify-content-center page">
+        <h1 class="text-center text-light">BREAK UP?</h1>
+        <button class="btn btn-danger btn-lg shadow" id="break-btn">SUBUKAN MO</button>
+      </div>
+    </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+          crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
