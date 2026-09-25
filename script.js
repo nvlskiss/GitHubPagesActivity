@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (annivElement) {
         if (distance2 < 0) {
-          annivElement.innerHTML = "Next Month Na Ulit!";
+          annivElement.innerHTML = "Next Year Na Ulit!";
         } else {
           const days = Math.floor(distance2/ (1000 * 60 * 60 * 24));
           const hours = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (heBElement) {
         if (distance3 < 0) {
-          heBElement.innerHTML = "Next Month Na Ulit!";
+          heBElement.innerHTML = "Next Year Na Ulit!";
         } else {
           const days = Math.floor(distance3/ (1000 * 60 * 60 * 24));
           const hours = Math.floor((distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (sheBElement) {
         if (distance4 < 0) {
-          sheBElement.innerHTML = "Next Month Na Ulit!";
+          sheBElement.innerHTML = "Next Year Na Ulit!";
         } else {
           const days = Math.floor(distance4/ (1000 * 60 * 60 * 24));
           const hours = Math.floor((distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
